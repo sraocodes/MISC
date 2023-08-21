@@ -4,3 +4,13 @@ Run the command:
 cat ~/.ssh/id_rsa.pub
 cat ~/.ssh/id_rsa
 
+Install Eclipse
+
+1) download .tar.gz from https://www.eclipse.org/downloads/
+2) Extract the file 
+   tar -zxvf eclipse-java-xxxx-xx-xx-linux-gtk-x86_64.tar.gz
+3) Move Extracted Eclipse Installer folder to Home
+4) ./eclipse-inst
+   Installer should open and install eclipse for you
+
+

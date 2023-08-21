@@ -1,1 +1,6 @@
+How to view your SSH public key on Linux
+
+Run the command:
+cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa
 

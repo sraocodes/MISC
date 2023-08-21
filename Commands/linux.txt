@@ -21,5 +21,11 @@ sudo apt-get install subversion
 
 2) svn co svn://icg4lts.icg.kfa-juelich.de/agroc_codes_v3
 
+3) Go to the downloaded folder agroc_codes_v3. Make sure you install fortran compiler for Linux
+
+sudo apt-get update
+sudo apt-get install gfortran make
+
+4) type make, it should generate output files in the agroc_codes_v3 folder.
 
 

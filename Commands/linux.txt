@@ -30,4 +30,14 @@ sudo apt-get install gfortran make
 
 5) make clean to remove recently generated output files
 
+Install Simplace-CPlantbox coupling module
+
+1) mkdir ~/simplantbox
+2) cd ~/simplantbox
+3) sudo apt-get update
+4) sudo apt-get install g++
+5) conda create -n simplace python=3.8
+6) conda activate simplace
+7) pip install vtk
+8) export PYTHONPATH=$PYTHONPATH:/home/srao/Documents/simplantbox/simplace_wrapper/python_simplace/trunk/PyPlantBox/misc/CPlantBox
 

@@ -1,0 +1,47 @@
+GRANAR/MECHA
+
+Setting up R-Studio
+Installing R
+Open Terminal:
+
+bash
+Copy code
+Ctrl + Alt + T
+
+sudo sh -c 'echo "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/" >> /etc/apt/sources.list'
+Add GPG Key:
+
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+Update and Install R:
+
+sudo apt update
+sudo apt install r-base
+Verify R Installation:
+R --version
+
+Installing RStudio
+
+Download the appropriate .deb file for RStudio from the RStudio Download page.
+Navigate to Download Directory:
+
+cd ~/Downloads
+Install RStudio:
+
+sudo dpkg -i rstudio-x.y.z-amd64.deb
+RStudio Not Launching from Terminal:
+Issue: Attempting to launch RStudio from the terminal resulted in "rstudio: command not found".
+Resolution: Checked if RStudio was installed via the GUI. Ensured the RStudio path was included in the system's PATH variable or created a symbolic link.
+R Session Failed to Start in RStudio:
+
+Issue: Upon opening RStudio, an error occurred stating "The R session failed to start", along with a message about missing libpq.so.5.
+Resolution: Installed the missing PostgreSQL client libraries.
+bash
+sudo apt-get install libpq-dev
+
+Issue: Encountered dependency issues and broken packages when installing libpq-dev.
+Resolution: Used sudo apt --fix-broken install to fix broken packages and updated the system.
+
+sudo apt --fix-broken install
+sudo apt update
+sudo apt upgrade
